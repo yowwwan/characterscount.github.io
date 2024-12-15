@@ -1,0 +1,1129 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", serif;
+ 
+
+ }
+
+body{
+  height: 100vh;
+  background-color: grey;
+ 
+}
+
+.main{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.header{
+  height: 155px;
+  width: 100vw;
+  background-color: #202124;
+  position: absolute;
+  z-index: -1;
+  border-top: 3px solid #d6d6c1;
+  border-bottom: 3px solid #d6d6c1;
+}
+
+.headertext{
+ 
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 15px;
+  color: #d6d6c1;
+  font-family: "Lobster", serif;
+  font-style: oblique;
+  text-decoration: underline;
+ 
+  }
+
+.container{
+  height: 675px;
+  width: 1060px;
+  background-color: #616366;
+  border-radius: 15px;
+  margin-top: 15px;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
+  display: flex;
+  overflow: hidden;
+ 
+}
+
+.textarea{
+  padding: 35px;
+  flex: 2.1;
+  font-size: 25px;
+  outline: none;
+  background-color: #434547;
+  border: none;
+  resize: none;
+  color: #d6d6c1;
+  transition: 1s ease;
+  cursor: pointer;
+  
+}
+
+.textarea:focus{
+  background-color: #6c6f71;
+      
+}
+
+
+.textarea:hover::placeholder{
+  color: #e2e2d3;
+  
+}
+
+::placeholder{
+  color: #d6d6c178;
+  transition: 1s ease;
+  font-weight: bolder;
+
+}
+
+.textarea:focus::-webkit-input-placeholder {
+  color:transparent; 
+  transition: 1s ease;
+
+}
+
+
+.stats{
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  background-color: #93979e;
+  text-align: center;
+}
+
+.stat-number-Facebook, .stat-number-Twitter, .stat-number-Instagram,
+.stat-number-zero {
+  font-size: 40px;
+  font-weight: 500;
+  color: #d6d6c1;
+  font-style: normal;
+  transition: 1s ease;
+}
+
+.stat-fontFacebook, .stat-fontTwitter, .stat-fontInstagram{
+  font-size: 20px;
+  font-style: normal;
+  transition: 1s ease;
+}
+
+.stat-fontWritten{
+  font-size: 20px;
+  font-style: normal;
+  transition: 1s ease;
+}
+
+
+.stat-typingMode{
+  color: #c23434;
+  transition: 1s ease;
+}
+
+.stat-typingmodeGreen{
+  color: #48bf48;
+}
+
+.stat-typingmodeRed{
+  color: #c23434;
+}
+
+
+.stat{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 150px;
+  font-style: normal;
+  color: #d6d6c1;
+  
+}
+
+.stat-number-zero{
+  margin-top: 0px;
+}
+
+
+.stat:nth-child( 1 ),
+.stat:nth-child( 2 ){
+  border-left: 1px solid #d6d6c1;
+  border-bottom: 1px solid #d6d6c1;
+}
+
+.stat:nth-child( 3 ),
+.stat:nth-child( 4 ){
+  border-left: 1px solid #d6d6c1;
+}
+
+.fa-icon{
+  margin-bottom: 30px;
+  font-size: 50px;
+ 
+}
+
+.fa-keyboard{
+  font-size: 50px;
+  transition: 1.5s ease;
+}
+
+
+.fa-spinner{
+  font-size: 30px;
+ 
+}
+
+
+.keyboardFocusOutColor, .redlimit, .fa-keyboardRed {
+  color: #c23434;
+}
+
+
+.greenOnTheGo, .keyboardFocusColor{
+  color: #48bf48;
+ 
+} 
+
+@media (max-width: 1100px){
+  .main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  
+  .header{
+    height: 155px;
+    width: 100vw;
+    background-color: #202124;
+    position: absolute;
+    z-index: -1;
+    border-top: 3px solid #d6d6c1;
+    border-bottom: 3px solid #d6d6c1;
+  }
+  
+  .headertext{
+   
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 15px;
+    color: #d6d6c1;
+    font-family: "Lobster", serif;
+    font-style: oblique;
+    text-decoration: underline;
+   
+    }
+  
+  .container{
+    height: 100vh;
+    width: 100vw;
+    background-color: #616366;
+    border-radius: 0px;
+    margin-top: 15px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    
+   
+  }
+  
+  .textarea{
+    padding: 35px;
+    flex: 2.1;
+    font-size: 25px;
+    outline: none;
+    background-color: #434547;
+    border: none;
+    resize: none;
+    color: #d6d6c1;
+    transition: 1s ease;
+    cursor: pointer;
+    
+  }
+  
+  .textarea:focus{
+    background-color: #6c6f71;
+        
+  }
+  
+  
+  .textarea:hover::placeholder{
+    color: #e2e2d3;
+    
+  }
+  
+  ::placeholder{
+    color: #d6d6c178;
+    transition: 1s ease;
+    font-weight: bolder;
+  
+  }
+  
+  .textarea:focus::-webkit-input-placeholder {
+    color:transparent; 
+    transition: 1s ease;
+  
+  }
+  
+  
+  .stats{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    background-color: #93979e;
+    text-align: center;
+  }
+  
+  .stat-number-Facebook, .stat-number-Twitter, .stat-number-Instagram,
+  .stat-number-zero {
+    font-size: 40px;
+    font-weight: 500;
+    color: #d6d6c1;
+    font-style: normal;
+    transition: 1s ease;
+  }
+  
+  .stat-fontFacebook, .stat-fontTwitter, .stat-fontInstagram{
+    font-size: 20px;
+    font-style: normal;
+    transition: 1s ease;
+  }
+  
+  .stat-fontWritten{
+    font-size: 20px;
+    font-style: normal;
+    transition: 1s ease;
+  }
+  
+  
+  .stat-typingMode{
+    color: #c23434;
+    transition: 1s ease;
+  }
+  
+  .stat-typingmodeGreen{
+    color: #48bf48;
+  }
+  
+  .stat-typingmodeRed{
+    color: #c23434;
+  }
+  
+  
+  .stat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 150px;
+    font-style: normal;
+    color: #d6d6c1;
+    
+  }
+  
+  .stat-number-zero{
+    margin-top: 0px;
+  }
+  
+  
+  .stat:nth-child( 1 ),
+  .stat:nth-child( 2 ){
+    border-left: 1px solid #d6d6c1;
+    border-bottom: 1px solid #d6d6c1;
+  }
+  
+  .stat:nth-child( 3 ),
+  .stat:nth-child( 4 ){
+    border-left: 1px solid #d6d6c1;
+  }
+  
+  .fa-icon{
+    margin-bottom: 30px;
+    font-size: 50px;
+   
+  }
+  
+  .fa-keyboard{
+    font-size: 50px;
+    transition: 1.5s ease;
+  }
+  
+  
+  .fa-spinner{
+    font-size: 30px;
+   
+  }
+  
+  
+  .keyboardFocusOutColor, .redlimit, .fa-keyboardRed {
+    color: #c23434;
+  }
+  
+  
+  .greenOnTheGo, .keyboardFocusColor{
+    color: #48bf48;
+   
+  } 
+  
+}
+
+@media (max-width: 990px){
+  .main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  
+  .header{
+    height: 155px;
+    width: 100vw;
+    background-color: #202124;
+    position: absolute;
+    z-index: -1;
+    border-top: 3px solid #d6d6c1;
+    border-bottom: 3px solid #d6d6c1;
+  }
+  
+  .headertext{
+   
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 15px;
+    color: #d6d6c1;
+    font-family: "Lobster", serif;
+    font-style: oblique;
+    text-decoration: underline;
+   
+    }
+  
+  .container{
+    height: 100vh;
+    width: 100vw;
+    background-color: #616366;
+    border-radius: 0px;
+    margin-top: 15px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    
+   
+  }
+  
+  .textarea{
+    padding: 35px;
+    flex: 2.1;
+    font-size: 25px;
+    outline: none;
+    background-color: #434547;
+    border: none;
+    resize: none;
+    color: #d6d6c1;
+    transition: 1s ease;
+    cursor: pointer;
+    
+  }
+  
+  .textarea:focus{
+    background-color: #6c6f71;
+        
+  }
+  
+  
+  .textarea:hover::placeholder{
+    color: #e2e2d3;
+    
+  }
+  
+  ::placeholder{
+    color: #d6d6c178;
+    transition: 1s ease;
+    font-weight: bolder;
+  
+  }
+  
+  .textarea:focus::-webkit-input-placeholder {
+    color:transparent; 
+    transition: 1s ease;
+  
+  }
+  
+  
+  .stats{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    background-color: #93979e;
+    text-align: center;
+  }
+  
+  .stat-number-Facebook, .stat-number-Twitter, .stat-number-Instagram,
+  .stat-number-zero {
+    font-size: 40px;
+    font-weight: 500;
+    color: #d6d6c1;
+    font-style: normal;
+    transition: 1s ease;
+  }
+  
+  .stat-fontFacebook, .stat-fontTwitter, .stat-fontInstagram{
+    font-size: 20px;
+    font-style: normal;
+    transition: 1s ease;
+  }
+  
+  .stat-fontWritten{
+    font-size: 20px;
+    font-style: normal;
+    transition: 1s ease;
+  }
+  
+  
+  .stat-typingMode{
+    color: #c23434;
+    transition: 1s ease;
+  }
+  
+  .stat-typingmodeGreen{
+    color: #48bf48;
+  }
+  
+  .stat-typingmodeRed{
+    color: #c23434;
+  }
+  
+  
+  .stat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 150px;
+    font-style: normal;
+    color: #d6d6c1;
+    
+  }
+  
+  .stat-number-zero{
+    margin-top: 0px;
+  }
+  
+  
+  .stat:nth-child( 1 ),
+  .stat:nth-child( 2 ),
+  .stat:nth-child( 3 ){
+    border-left: 1px solid #d6d6c1;
+    border-bottom: 1px solid #d6d6c1;
+  }
+  
+  .stat:nth-child( 3 ),
+  .stat:nth-child( 4 ){
+    border-left: 1px solid #d6d6c1;
+  }
+  
+  .fa-icon{
+    margin-bottom: 30px;
+    font-size: 50px;
+   
+  }
+  
+  .fa-keyboard{
+    font-size: 50px;
+    transition: 1.5s ease;
+  }
+  
+  
+  .fa-spinner{
+    font-size: 30px;
+   
+  }
+  
+  
+  .keyboardFocusOutColor, .redlimit, .fa-keyboardRed {
+    color: #c23434;
+  }
+  
+  
+  .greenOnTheGo, .keyboardFocusColor{
+    color: #48bf48;
+   
+  } 
+  
+}
+
+@media (max-width: 700px){
+  
+    .main{
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    
+    }
+    
+    .header{
+      height: 155px;
+      width: 100vw;
+      background-color: #202124;
+      position: absolute;
+      z-index: -1;
+      border-top: 3px solid #d6d6c1;
+      border-bottom: 3px solid #d6d6c1;
+    }
+    
+    .headertext{
+     
+      text-align: center;
+      font-size: 3rem;
+      margin-top: 15px;
+      color: #d6d6c1;
+      font-family: "Lobster", serif;
+      font-style: oblique;
+      text-decoration: underline;
+     
+    }
+    
+    .container{
+      height: 100vh;
+      width: 100vw;
+      background-color: #616366;
+      border-radius: 0px;
+      margin-top: 15px;
+      box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      
+     
+    }
+    
+    .textarea{
+      padding: 35px;
+      flex: 2.1;
+      font-size: 25px;
+      outline: none;
+      background-color: #434547;
+      border: none;
+      resize: none;
+      color: #d6d6c1;
+      transition: 1s ease;
+      cursor: pointer;
+      
+    }
+    
+    .textarea:focus{
+      background-color: #6c6f71;
+          
+    }
+    
+    
+    .textarea:hover::placeholder{
+      color: #e2e2d3;
+      
+    }
+    
+    ::placeholder{
+      color: #d6d6c178;
+      transition: 1s ease;
+      font-weight: bolder;
+    
+    }
+    
+    .textarea:focus::-webkit-input-placeholder {
+      color:transparent; 
+      transition: 1s ease;
+    
+    }
+    
+    
+    .stats{
+      display: flex;
+      flex-wrap: wrap;
+      flex: 1;
+      background-color: #93979e;
+      text-align: center;
+    }
+    
+    .stat-number-Facebook, .stat-number-Twitter, .stat-number-Instagram,
+    .stat-number-zero {
+      font-size: 40px;
+      font-weight: 500;
+      color: #d6d6c1;
+      font-style: normal;
+      transition: 1s ease;
+    }
+    
+    .stat-fontFacebook, .stat-fontTwitter, .stat-fontInstagram{
+      font-size: 20px;
+      font-style: normal;
+      transition: 1s ease;
+    }
+    
+    .stat-fontWritten{
+      font-size: 20px;
+      font-style: normal;
+      transition: 1s ease;
+    }
+    
+    
+    .stat-typingMode{
+      color: #c23434;
+      transition: 1s ease;
+    }
+    
+    .stat-typingmodeGreen{
+      color: #48bf48;
+    }
+    
+    .stat-typingmodeRed{
+      color: #c23434;
+    }
+    
+    
+    .stat{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex: 1 150px;
+      font-style: normal;
+      color: #d6d6c1;
+      
+    }
+    
+    .stat-number-zero{
+      margin-top: 0px;
+    }
+    
+    
+    .stat:nth-child( 1 ),
+    .stat:nth-child( 2 ),
+    .stat:nth-child( 3 ){
+      border-left: 1px solid #d6d6c1;
+      border-bottom: 1px solid #d6d6c1;
+    }
+    
+    .stat:nth-child( 3 ),
+    .stat:nth-child( 4 ){
+      border-left: 1px solid #d6d6c1;
+    }
+    
+    .fa-icon{
+      margin-bottom: 30px;
+      font-size: 50px;
+     
+    }
+    
+    .fa-keyboard{
+      font-size: 50px;
+      transition: 1.5s ease;
+    }
+    
+    
+    .fa-spinner{
+      font-size: 30px;
+     
+    }
+    
+    
+    .keyboardFocusOutColor, .redlimit, .fa-keyboardRed {
+      color: #c23434;
+    }
+    
+    
+    .greenOnTheGo, .keyboardFocusColor{
+      color: #48bf48;
+     
+    } 
+    
+  } 
+
+
+@media (max-width: 670px){
+  .main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  
+  .header{
+    height: 155px;
+    width: 100vw;
+    background-color: #202124;
+    position: absolute;
+    z-index: -1;
+    border-top: 3px solid #d6d6c1;
+    border-bottom: 3px solid #d6d6c1;
+  }
+  
+  .headertext{
+   
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 15px;
+    color: #d6d6c1;
+    font-family: "Lobster", serif;
+    font-style: oblique;
+    text-decoration: underline;
+   
+  }
+  
+  .container{
+    height: 100vh;
+    width: 100vw;
+    background-color: #616366;
+    border-radius: 0px;
+    margin-top: 15px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    
+   
+  }
+  
+  .textarea{
+    padding: 35px;
+    flex: 2.1;
+    font-size: 15px;
+    outline: none;
+    background-color: #434547;
+    border: none;
+    resize: none;
+    color: #d6d6c1;
+    transition: 1s ease;
+    cursor: pointer;
+    
+  }
+  
+  .textarea:focus{
+    background-color: #6c6f71;
+        
+  }
+  
+  
+  .textarea:hover::placeholder{
+    color: #e2e2d3;
+    
+  }
+  
+  ::placeholder{
+    color: #d6d6c178;
+    transition: 1s ease;
+    font-weight: bolder;
+  
+  }
+  
+  .textarea:focus::-webkit-input-placeholder {
+    color:transparent; 
+    transition: 1s ease;
+  
+  }
+  
+  
+  .stats{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    background-color: #93979e;
+    text-align: center;
+  }
+  
+  .stat-number-Facebook, .stat-number-Twitter, .stat-number-Instagram,
+  .stat-number-zero {
+    font-size: 40px;
+    font-weight: 500;
+    color: #d6d6c1;
+    font-style: normal;
+    transition: 1s ease;
+  }
+  
+  .stat-fontFacebook, .stat-fontTwitter, .stat-fontInstagram{
+    font-size: 20px;
+    font-style: normal;
+    transition: 1s ease;
+  }
+  
+  .stat-fontWritten{
+    font-size: 20px;
+    font-style: normal;
+    transition: 1s ease;
+  }
+  
+  
+  .stat-typingMode{
+    color: #c23434;
+    transition: 1s ease;
+  }
+  
+  .stat-typingmodeGreen{
+    color: #48bf48;
+  }
+  
+  .stat-typingmodeRed{
+    color: #c23434;
+  }
+  
+  
+  .stat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 150px;
+    font-style: normal;
+    color: #d6d6c1;
+    
+  }
+  
+  .stat-number-zero{
+    margin-top: 0px;
+  }
+  
+  
+  .stat:nth-child( 1 ),
+  .stat:nth-child( 2 ),
+  .stat:nth-child( 3 ){
+    border-left: 1px solid #d6d6c1;
+    border-bottom: 1px solid #d6d6c1;
+  }
+  
+  .stat:nth-child( 3 ),
+  .stat:nth-child( 4 ){
+    border-left: 1px solid #d6d6c1;
+  }
+  
+  .fa-icon{
+    margin-bottom: 30px;
+    font-size: 50px;
+   
+  }
+  
+  .fa-keyboard{
+    font-size: 50px;
+    transition: 1.5s ease;
+  }
+  
+  
+  .fa-spinner{
+    font-size: 30px;
+   
+  }
+  
+  
+  .keyboardFocusOutColor, .redlimit, .fa-keyboardRed {
+    color: #c23434;
+  }
+  
+  
+  .greenOnTheGo, .keyboardFocusColor{
+    color: #48bf48;
+   
+  } 
+
+} 
+ 
+
+
+@media (max-width: 510px){
+
+  .main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  
+  .header{
+    height: 155px;
+    width: 100vw;
+    background-color: #202124;
+    position: absolute;
+    z-index: -1;
+    border-top: 3px solid #d6d6c1;
+    border-bottom: 3px solid #d6d6c1;
+  }
+  
+  .headertext{
+   
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 15px;
+    color: #d6d6c1;
+    font-family: "Lobster", serif;
+    font-style: oblique;
+    text-decoration: underline;
+   
+  }
+  
+  .container{
+    height: 100vh;
+    width: 100vw;
+    background-color: #616366;
+    border-radius: 0px;
+    margin-top: 15px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    
+   
+  }
+  
+  .textarea{
+    padding: 35px;
+    flex: 2.1;
+    font-size: 15px;
+    outline: none;
+    background-color: #434547;
+    border: none;
+    resize: none;
+    color: #d6d6c1;
+    transition: 1s ease;
+    cursor: pointer;
+    
+  }
+  
+  .textarea:focus{
+    background-color: #6c6f71;
+        
+  }
+  
+  
+  .textarea:hover::placeholder{
+    color: #e2e2d3;
+    
+  }
+  
+  ::placeholder{
+    color: #d6d6c178;
+    transition: 1s ease;
+    font-weight: bolder;
+  
+  }
+  
+  .textarea:focus::-webkit-input-placeholder {
+    color:transparent; 
+    transition: 1s ease;
+  
+  }
+  
+  
+  .stats{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    background-color: #93979e;
+    text-align: center;
+  }
+  
+  .stat-number-Facebook, .stat-number-Twitter, .stat-number-Instagram,
+  .stat-number-zero {
+    font-size: 40px;
+    font-weight: 500;
+    color: #d6d6c1;
+    font-style: normal;
+    transition: 1s ease;
+  }
+  
+  .stat-fontFacebook, .stat-fontTwitter, .stat-fontInstagram{
+    font-size: 20px;
+    font-style: normal;
+    transition: 1s ease;
+  }
+  
+  .stat-fontWritten{
+    font-size: 20px;
+    font-style: normal;
+    transition: 1s ease;
+  }
+  
+  
+  .stat-typingMode{
+    color: #c23434;
+    transition: 1s ease;
+  }
+  
+  .stat-typingmodeGreen{
+    color: #48bf48;
+  }
+  
+  .stat-typingmodeRed{
+    color: #c23434;
+  }
+  
+  
+  .stat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 150px;
+    font-style: normal;
+    color: #d6d6c1;
+    
+  }
+  
+  .stat-number-zero{
+    margin-top: 0px;
+  }
+  
+  
+  .stat:nth-child( 1 ),
+  .stat:nth-child( 2 ),
+  .stat:nth-child( 3 ){
+    border-left: 1px solid #d6d6c1;
+    border-bottom: 1px solid #d6d6c1;
+  }
+  
+  .stat:nth-child( 3 ),
+  .stat:nth-child( 4 ){
+    border-left: 1px solid #d6d6c1;
+  }
+  
+  .fa-icon{
+    margin-bottom: 30px;
+    font-size: 50px;
+   
+  }
+  
+  .fa-keyboard{
+    font-size: 50px;
+    transition: 1.5s ease;
+  }
+  
+  
+  .fa-spinner{
+    font-size: 30px;
+   
+  }
+  
+  
+  .keyboardFocusOutColor, .redlimit, .fa-keyboardRed {
+    color: #c23434;
+  }
+  
+  
+  .greenOnTheGo, .keyboardFocusColor{
+    color: #48bf48;
+   
+  } 
+ 
+
+
+}
+
+@media (max-width: 450px){
+  
+
+
+}
+
+
